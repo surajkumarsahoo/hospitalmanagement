@@ -1,0 +1,6 @@
+projectKey=hospitalmanagementsystem
+serverUrl=http://localhost:8081
+serverVersion=7.0.0.36138
+dashboardUrl=http://localhost:8081/dashboard/index/hospitalmanagementsystem
+ceTaskId=AW8U5kTljEoNfF4k6nYq
+ceTaskUrl=http://localhost:8081/api/ce/task?id=AW8U5kTljEoNfF4k6nYq
