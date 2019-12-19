@@ -1,7 +1,6 @@
 package com.mindtree.hospitalmanagementsystem.service.serviceimpl;
 
 import java.util.List;
-import java.util.Set;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -26,7 +25,9 @@ public class PatientServiceImpl implements PatientService {
 	@Override
 	public boolean assignDoctorToPatient(String doctorname, String patientName)
 			throws HospitalManagementServiceException {
-		boolean isAssigned = false, isDoctorAvailable = false, isPatientAvailable = false;
+		boolean isAssigned = false;
+		boolean isDoctorAvailable = false;
+		boolean isPatientAvailable = false;
 		List<Doctor> doctors = doctorRepository.findAll();
 		List<Patient> patients = patientRepository.findAll();
 		try {

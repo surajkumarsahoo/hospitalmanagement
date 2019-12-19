@@ -1,7 +1,5 @@
 package com.mindtree.hospitalmanagementsystem.handler;
 
-import java.util.Map;
-
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;
@@ -9,7 +7,6 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 
 import com.mindtree.hospitalmanagementsystem.controller.PatientController;
 import com.mindtree.hospitalmanagementsystem.exception.serviceexception.DoctorNameNotFoundException;
-import com.mindtree.hospitalmanagementsystem.exception.serviceexception.HospitalManagementServiceException;
 import com.mindtree.hospitalmanagementsystem.exception.serviceexception.PatientNameNotFoundException;
 
 @RestControllerAdvice(assignableTypes = { PatientController.class })
