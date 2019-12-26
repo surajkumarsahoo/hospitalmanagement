@@ -33,7 +33,7 @@ public class DoctorServiceImpl implements DoctorService {
 		List<Doctor> selectedDoctors = new ArrayList<Doctor>();
 		List<DoctorDto> doctorDtos = new ArrayList<DoctorDto>();
 		for (Doctor doctor : doctors) {
-
+			patientCount=doctor.getPatients().size();
 			try {
 				if (patientCount == 0)
 					throw new NoPatientFoundException("patients not available.");
